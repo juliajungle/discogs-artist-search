@@ -7,7 +7,6 @@ export const search = (query = "the midnight", type = "artist") => {
       method: "GET",
       Accept: "application/json",
       "Content-Type": "application/json",
-      "User-Agent": "JuliaDiscogsBrowser/0.1 +http://localhost:3002/",
     }
   )
     .catch((err) => console.error(err))
@@ -23,7 +22,6 @@ export const getArtist = (artistId) =>
     method: "GET",
     Accept: "application/json",
     "Content-Type": "application/json",
-    "User-Agent": "JuliaDiscogsBrowser/0.1 +http://localhost:3002/",
   })
     .catch((err) => console.error(err))
     .then((res) => res.json())

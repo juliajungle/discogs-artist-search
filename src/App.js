@@ -51,7 +51,6 @@ const App = () => {
 
       try {
         const { releases } = await getArtistReleases(artistId);
-        console.log("releases", releases);
         setReleases(releases);
       } catch (error) {
         console.log(error);
